@@ -4,7 +4,7 @@
 int main()
 {
     int sum, time;
-    printf("Введите сумму вклада "
+    printf("Введите сумму вклада"
            " ");
     scanf("%d", &sum);
     while (sum < 10000) {
