@@ -1,3 +1,4 @@
+#include "deposit.h"
 int CheckTerm(int a)
 {
 if (a<0 || a>365)
