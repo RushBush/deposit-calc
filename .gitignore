@@ -3,3 +3,7 @@
 main.c~
 #main.c#
 .main.c.swp
+/build
+/bin
+/test
+/
