@@ -5,7 +5,7 @@ SRC_F = src/
 SOURCE_O = main.o deposit.o
 FLAGS = -Wall -Werror
 
-.PHONY:	all clean
+.PHONY: all clean
 	
 all : deposit
 
