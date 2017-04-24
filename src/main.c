@@ -8,7 +8,7 @@ int main()
 	printf("Enter the term:  ");
 	scanf("%d", &day);
 	printf("Enter the amount: ");
-	scanf("%d", &summa);
+	scanf("%f", &summa);
 
 	while (check(day, summa) == -1) {
 		printf("Enter data again");
