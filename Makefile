@@ -7,9 +7,9 @@ FLAGS = -Wall -Werror
 
 .PHONY:	all clean
 	
-all : calc calc-test
+all : deposit
 
-calc:	mkDir $(SOURCE_O)
+deposit:	mkDir $(SOURCE_O)
 	$(CC) $(BUILD_F)deposit.o $(BUILD_F)main.o -o $(BIN_F)deposit-calc
 
 deposit.o:	src/deposit.c
@@ -20,6 +20,7 @@ main.o:	$(SRC_F)main.c
 
 clean:
 	rm -rf $(BUILD_F)
+	rm -rf $(BIN_F)
 
 mkDir:
 	mkdir $(BIN_F)
