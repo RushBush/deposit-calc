@@ -13,7 +13,7 @@ int check(int day, float summa)
 	return 0;
 }
 
-double calc(int day, int summa)
+double calc(int day, float summa)
 {	
 	if (day < 31) 
 		return summa * 0.9;

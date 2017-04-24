@@ -1,15 +1,7 @@
-#ifndef TERM
-#define TERM
-int CheckTerm(int a);
-#endif
+#ifndef DEPOSIT_H
+#define DEPOSIT_H
 
-#ifndef AMOUNT
-#define AMOUNT
-double CheckAmount(double b);
-#endif
+int check(int day, float summa);
+double calc(int day, float summa);
 
-#ifndef SUM
-#define SUM
-double Sum(int a,double b);
 #endif
- 
