@@ -8,7 +8,7 @@ FLAGS = -Wall -Werror -MP -MMD
 
 .PHONY: all clean
 	
-all : deposit 
+all : deposit testing
 deposit:	mkDir $(SOURCE_O)
 	$(CC) $(BUILD_F)deposit.o $(BUILD_F)main.o -o $(BIN_F)deposit-calc
 
