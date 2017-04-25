@@ -8,8 +8,7 @@ FLAGS = -Wall -Werror -MP -MMD
 
 .PHONY: all clean
 	
-all : deposit testing
-
+all : deposit 
 deposit:	mkDir $(SOURCE_O)
 	$(CC) $(BUILD_F)deposit.o $(BUILD_F)main.o -o $(BIN_F)deposit-calc
 
@@ -31,7 +30,7 @@ rmDir:
 	rm -r $(BIN_F)
 	rm -r $(BUILD_F)
 
-testing: bin build deposit_test.o validation_test.o main1.o
+testing: deposit_test.o validation_test.o main1.o
 	$(CC) build/src/deposit_test.o build/src/validation_test.o build/src/main.o -o bin/tests
 
 deposit_test.o: test/deposit_test.c
@@ -43,8 +42,5 @@ validation_test.o: test/validation_test.c
 main1.o: test/main.c
 	$(CC) $(FLAGS) -c test/main.c -o build/src/main.o
 
-bin:
-	test ! -d bin && mkdir bin
-build:
-	test ! -d build && mkdir build
+
 

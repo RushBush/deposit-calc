@@ -24,6 +24,7 @@ int main()
                         break;
                     case 2:
                         return 0;
+			break;
                  }
 	}
 	printf("Amount after deposit is %.3f\n", calc(day, summa));	

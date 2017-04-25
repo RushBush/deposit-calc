@@ -27,7 +27,7 @@ double calc(int day, float summa)
 		if((day > 240) && (day < 366))
 			return summa * 1.12;
 	}
-	if (summa > 100000) {
+	if (summa >= 100000) {
 		if((day > 30) && (day < 121))
 			return summa * 1.03;
 
