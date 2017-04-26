@@ -65,5 +65,13 @@ CTEST(deposit, test8)
     float expected = sum*1.15;
     ASSERT_DBL_NEAR(expected, result);
 }
+CTEST(deposit, test9)
+{
+    float sum=154320;
+    float result = calc(250, sum);
+    float expected = 15364;
+    ASSERT_DBL_NEAR(expected, result);
+}
+
 
 
